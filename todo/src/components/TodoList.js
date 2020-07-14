@@ -7,7 +7,7 @@ const TodoList = () => {
     const [ state, dispatch ] = useReducer(reducer, initialState);
     return (
         <div>
-            <div>
+            <div className="Todo-list">
                 {state.map(todo => {
                     return <Todo key={todo.id} dispatch={dispatch} data={todo}/>
                 })} 
